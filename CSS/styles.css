@@ -3,6 +3,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  line-height: 1.5;
   scrollbar-color: var(--scoll) transparent;
 }
 
@@ -41,6 +42,7 @@ h3 {
 }
 p {
   color: white;
+  margin: 1em 0;
 }
 a {
   text-decoration: none;
@@ -62,7 +64,7 @@ a {
   );
   position: relative;
   animation: lineFadeLeft 1s linear 1s forwards;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0;
 }
 .lineBlue {
   height: 2px;
@@ -78,9 +80,45 @@ a {
     transparent
   );
   position: relative;
-  margin-bottom: 1.5rem;
+  margin: 1rem 0;
 }
 
+/* Bullets on list items */
+ul {
+  list-style-type: square;
+  margin-left: 1.5em;
+}
+
+/*Links*/
+a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.4s;
+}
+a:hover,
+a:focus {
+  color: rgb(255, 255, 255);
+}
+a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background: var(--pink-d);
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  align-items: center;
+  transition: all 0.23s ease;
+  pointer-events: none;
+}
+a:hover::after,
+a:focus::after {
+  width: 100%;
+}
+
+/* Blank div for spacing */
 .blank {
   /*Blank containers—for spacing purposes*/
   width: 100%;
@@ -144,6 +182,7 @@ body {
   top: 0px;
   height: 60px;
   z-index: 10;
+  align-items: center;
 }
 .nav-list {
   align-items: center;
@@ -155,35 +194,6 @@ body {
   display: flex;
   flex-direction: row;
   gap: clamp(20px, 5vw, 40px);
-}
-
-/*Nav links*/
-a {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 14px;
-  font-weight: 400;
-  position: relative;
-  transition: all 0.4s;
-}
-a:hover,
-a:focus {
-  color: rgb(255, 255, 255);
-}
-a::after {
-  content: "";
-  height: 1px;
-  width: 0%;
-  background: var(--pink-d);
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  align-items: center;
-  transition: all 0.23s ease;
-  pointer-events: none;
-}
-a:hover::after,
-a:focus::after {
-  width: 100%;
 }
 
 /*Container for all content below header*/
@@ -217,7 +227,6 @@ a:focus::after {
 }
 
 /*About Section*/
-
 #container-about {
   border-bottom: 4px double var(--pink-d);
   border-top: 4px double var(--pink-d);
@@ -271,6 +280,7 @@ a:focus::after {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5em;
+  margin-top: 1em;
 }
 #skills-head {
   text-align: center;
@@ -300,7 +310,7 @@ a:focus::after {
   color: white;
   width: 100%;
   height: 100%;
-  padding: 1em;
+  padding: 1.5em;
   box-sizing: border-box;
 }
 .skill::before {
@@ -345,6 +355,7 @@ a:focus::after {
   animation: fadeUp both;
   animation-timeline: view();
   animation-range: entry 30% cover 60vh;
+  margin: 0.5em 0 -1em 0;
 }
 
 #projects-line {
@@ -410,6 +421,7 @@ a:focus::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: button 2s ease-in-out infinite alternate;
 }
 
 #letschat a {
@@ -434,6 +446,13 @@ a:focus::after {
 #letschat:hover {
   z-index: 0;
   box-shadow: 10px 0 20px var(--blue-d), -10px 0 20px var(--pink-d);
+}
+
+footer p {
+  font-weight: 300;
+  font-size: 0.8em;
+  text-align: right;
+  margin: 2em;
 }
 
 @media (max-width: 900px) {
@@ -593,5 +612,14 @@ a:focus::after {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes button {
+  from {
+    filter: brightness(125%);
+  }
+  to {
+    filter: brightness(100%);
   }
 }
