@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  scrollbar-color: var(--scoll) transparent;
+}
+
+/*Body Style*/
+body {
+  font-family: Roboto, sans-serif;
+  color: var(font);
+  background-color: black;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 10%;
+}
+
+/*Line Styles*/
+.linePink {
+  height: 2px;
+  width: clamp(80%, 100%, 1000px);
+  border-radius: 5px;
+  opacity: 0;
+  background: linear-gradient(
+    to right,
+    var(--pink-d),
+    var(--pink-l),
+    var(--pink-d),
+    var(--pink-m),
+    transparent
+  );
+  position: relative;
+  animation: lineFadeLeft 1s linear 1s forwards;
+  margin: 1rem 0;
+}
+.lineBlue {
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    var(--blue-d),
+    var(--blue-l),
+    var(--blue-d),
+    var(--blue-m),
+    transparent
+  );
+  position: relative;
+  margin: 1rem 0;
+}
+
+/*Page Container - page background*/
+#page {
+  position: fixed;
+  height: 100vh;
+  width: clamp(5%, 85%, 1200px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--pink-m);
+  border-right: 2px solid var(--pink-d);
+  border-left: 2px solid var(--pink-d);
+}
+#page::before {
+  /*Pseudo-element contains the background image*/
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background-image: url("../Images/page-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+/*Container for all content below header*/
+#content {
+  position: relative;
+  display: block;
+  flex: 1;
+  box-sizing: content-box;
+  height: auto;
+  width: calc(100% + 1.75em);
+  margin-left: -0.5em;
+  margin-right: -0.75em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+/* Container for each section */
+.section {
+  position: relative;
+  margin-top: 60px;
+  padding: 10vh 0;
+}

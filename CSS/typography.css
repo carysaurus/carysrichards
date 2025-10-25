@@ -1,0 +1,62 @@
+/* Import from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Font Styles */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--header);
+}
+h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--header);
+}
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--header);
+}
+p {
+  color: white;
+  margin: 1rem 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Square bullets on list items */
+ul {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+
+/*Links*/
+a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  font-weight: 400;
+  position: relative;
+  transition: all 0.4s;
+}
+a:hover,
+a:focus {
+  color: rgb(255, 255, 255);
+}
+/* Link psuedoelement add line on hover */
+a::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  background: var(--pink-d);
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  align-items: center;
+  transition: all 0.23s ease;
+  pointer-events: none;
+}
+a:hover::after,
+a:focus::after {
+  width: 100%;
+}

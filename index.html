@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="css/reset.css" />
-    <!--reset browser styles-->
-    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Description"
+      content="Software developer and creative producer from Edmonton, Alberta."
+    />
     <title>Carys Richards - Portfolio</title>
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="Images/iconCarysaurus.png" type="image/x-icon" />
   </head>
   <body>
     <div id="page">
-      <header id="nav-header">
-        <div id="portfolio"><h2>Portfolio.</h2></div>
-
-        <!-- Mobile navigation -->
+      <!-- Page header -->
+      <header class="nav-header">
+        <div class="portfolio">
+          <h2>Portfolio.</h2>
+        </div>
+        <!-- Page navigation -->
         <nav>
-          <details id="nav-mobile" class="nav-list">
+          <!-- Mobile navigation -->
+          <details class="nav-mobile">
             <summary>☰</summary>
             <div class="nav-item">
               <a href="#section-about" class="nav-link">About</a>
@@ -30,10 +37,8 @@
               <a href="#section-contact" class="nav-link">Contact</a>
             </div>
           </details>
-        </nav>
-        <nav>
           <!-- Desktop navigation -->
-          <div id="nav-desktop" class="nav-list">
+          <div class="nav-desktop">
             <div class="nav-item">
               <a href="#section-about" class="nav-link">About</a>
             </div>
@@ -77,9 +82,8 @@
             <div id="about-headshot">
               <img
                 src="Images/Headshot.jpg"
-                height="100%"
-                width="100%"
-                style="display: block"
+                class="about-headshot-image"
+                alt="My lovely face"
               />
             </div>
           </div>
@@ -175,7 +179,6 @@
             </div>
           </div>
         </section>
-        <div class="blank"></div>
         <!-- Projects Section -->
         <section class="section" id="section-projects">
           <div id="container-projects">
@@ -199,20 +202,24 @@
             </div>
           </div>
         </section>
-        <div class="blank"></div>
         <!-- Contact Section -->
-        <section class="section" id="section-contact">
+        <footer class="section" id="section-contact">
           <div id="container-contact">
             <h3>Interested in working with me?</h3>
             <br />
-            <button id="letschat">
-              <a href="mailto:carysrichards@live.com">Let's Chat</a>
-            </button>
+            <a class="footer-button" href="mailto:carysrichards@live.com">
+              Let's Chat
+            </a>
           </div>
-        </section>
-        <div class="blank"></div>
-        <footer>
-          <p>&copy; 2025 Carys Richards / Carysaurus</p>
+          <!-- Copyright -->
+          <div class="footer-copyright">
+            <p>&copy; 2025 Carys Richards / Carysaurus</p>
+            <img
+              src="Images/iconCarysaurus.png"
+              class="footer-image"
+              alt="Carysaurus"
+            />
+          </div>
         </footer>
       </main>
     </div>

@@ -1,0 +1,16 @@
+/*Colour vars*/
+:root {
+  --pink-l: rgb(255, 176, 219);
+  --pink-m: rgba(131, 18, 78, 0.3); /*page background, faded*/
+  --pink-d: rgb(180, 24, 109); /*border*/
+  --blue-l: rgb(194, 238, 255);
+  --blue-m: rgba(66, 169, 210, 0.3); /*faded*/
+  --blue-d: rgb(58, 152, 190); /*border*/
+  --purple-l: rgb(210, 129, 203);
+  --purple-m: rgb(177, 67, 168, 0.3);
+  --purple-d: rgb(152, 23, 141);
+  --scoll: rgba(66, 169, 210, 0.3); /*scrollbar*/
+  --project: rgb(71, 71, 71);
+  --header: white;
+  --font: black;
+}

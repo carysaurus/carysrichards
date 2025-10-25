@@ -1,0 +1,12 @@
+@import url("./reset.css");
+@import url("./variables.css");
+@import url("./base.css");
+@import url("./typography.css");
+@import url("./animations.css");
+
+/* Section specific styling */
+@import url("./Sections/header.css");
+@import url("./Sections/about.css");
+@import url("./Sections/skills.css");
+@import url("./Sections/projects.css");
+@import url("./Sections/footer.css");
