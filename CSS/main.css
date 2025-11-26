@@ -5,8 +5,8 @@
 @import url("./animations.css");
 
 /* Section specific styling */
-@import url("./sections/header.css");
-@import url("./sections/about.css");
-@import url("./sections/skills.css");
-@import url("./sections/projects.css");
-@import url("./sections/footer.css");
+@import url("./Sections/header.css");
+@import url("./Sections/about.css");
+@import url("./Sections/skills.css");
+@import url("./Sections/projects.css");
+@import url("./Sections/footer.css");
