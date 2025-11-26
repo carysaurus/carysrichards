@@ -70,7 +70,7 @@ body {
   content: "";
   position: absolute;
   inset: 0px;
-  background-image: url("../Images/page-background.jpg");
+  background-image: url("../assets/pageBackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
