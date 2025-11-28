@@ -87,3 +87,12 @@
   overflow-y: auto;
   max-height: 305px;
 }
+
+.proj-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+}

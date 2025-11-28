@@ -12,43 +12,6 @@
   justify-content: center;
 }
 
-.footer-button {
-  background-color: black;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 2rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5em;
-  font-weight: 700;
-  z-index: 0;
-  box-shadow: 10px 0 20px var(--blue-d), -10px 0 20px var(--pink-d);
-  text-decoration: none;
-}
-
-.footer-button::after {
-  content: "";
-  position: absolute;
-  border-radius: inherit;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--blue-d),
-    var(--pink-d)
-  );
-  z-index: -1;
-}
-
-.footer-button:hover {
-  z-index: 0;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--blue-d),
-    var(--pink-d)
-  );
-}
-
 /* Remove psuedoelement line in contact link */
 .footer-button:hover::after,
 .footer-button:focus::after {
