@@ -102,3 +102,7 @@ body {
   margin-top: 60px;
   padding: 5vh 0;
 }
+
+#intro {
+  padding: 2rem;
+}

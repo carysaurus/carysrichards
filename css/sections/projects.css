@@ -75,17 +75,20 @@
 }
 
 .project img {
-  width: 40%;
+  width: clamp(225px, 35vw, 400px);
   height: auto; /* image determines height */
   object-fit: contain;
   flex-shrink: 0; /* stops the image from shrinking too small */
+  align-self: center;
 }
 
 .projectinfo {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  max-height: 305px;
+  /* min-height: 200px;
+  flex-shrink: 1; */
+  height: 300px;
 }
 
 .proj-btns {
@@ -93,6 +96,19 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 1rem;
+  padding-left: 0.5rem;
+  margin: 0.5rem;
   gap: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .project {
+    flex-direction: column;
+  }
+  .project img {
+    width: clamp(150px, 100%, 400px);
+  }
+  .projectinfo {
+    height: 250px;
+  }
 }
