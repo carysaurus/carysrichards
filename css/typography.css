@@ -81,7 +81,7 @@ i {
 }
 
 #intro h1 {
-  text-shadow: ;
+  text-shadow: 0 0 3rem black;
 }
 
 #intro h3 {
@@ -96,5 +96,5 @@ i {
   /* for Safari */
   color: transparent;
   background-size: 2400% 100%;
-  animation: textcol 10s linear infinite;
+  animation: textcol 15s linear infinite;
 }

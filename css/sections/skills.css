@@ -55,7 +55,7 @@
   inset: -200%;
   background: conic-gradient(var(--blue-l), var(--pink-d), var(--blue-l));
   z-index: 0;
-  animation: rotateBorder 15s linear infinite;
+  animation: rotateBorder 11s linear infinite;
   transform-origin: center;
 }
 
