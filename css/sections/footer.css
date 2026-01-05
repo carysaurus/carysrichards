@@ -10,6 +10,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 clamp(2%, 20%, 30%);
+  text-align: center;
 }
 
 /* Remove psuedoelement line in contact link */

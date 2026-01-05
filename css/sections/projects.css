@@ -47,7 +47,8 @@
   display: flex;
   flex-direction: row;
   gap: 2em;
-  align-items: flex-start; /* critical */
+  align-items: flex-start;
+  /* critical */
 }
 
 #project1 {
@@ -74,11 +75,26 @@
   animation-range: entry 10% cover 60vh;
 }
 
-.project img {
+.projectImg {
   width: clamp(225px, 35vw, 400px);
-  height: auto; /* image determines height */
+  height: auto;
+  /* image determines height */
   object-fit: contain;
-  flex-shrink: 0; /* stops the image from shrinking too small */
+  flex-shrink: 0;
+  /* stops the image from shrinking too small */
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  /* image determines height */
+  object-fit: contain;
+  flex-shrink: 0;
+  /* stops the image from shrinking too small */
   align-self: center;
 }
 
@@ -105,9 +121,11 @@
   .project {
     flex-direction: column;
   }
+
   .project img {
     width: clamp(150px, 100%, 400px);
   }
+
   .projectinfo {
     height: 250px;
   }
