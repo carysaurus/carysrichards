@@ -49,13 +49,14 @@
   padding: 1.5em;
   box-sizing: border-box;
 }
+
 .skill::before {
   content: "";
   position: absolute;
   inset: -200%;
   background: conic-gradient(var(--blue-l), var(--pink-d), var(--blue-l));
   z-index: 0;
-  animation: rotateBorder 11s linear infinite;
+  animation: rotateBorder 8s linear infinite;
   transform-origin: center;
 }
 
@@ -74,6 +75,7 @@
     grid-template-columns: 1fr;
     gap: 1.5em;
   }
+
   #credited-projects {
     grid-column: auto;
   }

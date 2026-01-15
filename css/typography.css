@@ -9,25 +9,30 @@ h1 {
   font-weight: 700;
   color: var(--header);
 }
+
 h2 {
   font-weight: 800;
   font-size: clamp(1.5rem, 6vw, 2.5rem);
   color: var(--header);
 }
+
 h3 {
   font-weight: 700;
   font-size: clamp(1.25rem, 3vw, 1.5rem);
   color: var(--header);
 }
+
 h4 {
   font-weight: 400;
   font-size: 1.25rem;
   color: var(--header);
 }
+
 p {
   color: white;
   margin: 1rem 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -47,10 +52,12 @@ a {
   position: relative;
   transition: all 0.4s;
 }
+
 a:hover,
 a:focus {
   color: rgb(255, 255, 255);
 }
+
 /* Link psuedoelement add line on hover */
 a::after {
   content: "";
@@ -64,6 +71,7 @@ a::after {
   transition: all 0.23s ease;
   pointer-events: none;
 }
+
 a:hover::after,
 a:focus::after {
   width: 100%;
@@ -85,16 +93,15 @@ i {
 }
 
 #intro h3 {
-  background-image: linear-gradient(
-    90deg,
-    var(--blue-d),
-    /* var(--blue-l), */ var(--pink-d),
-    var(--blue-d)
-  );
+  background-image: linear-gradient(90deg,
+      var(--blue-d),
+      /* var(--blue-l), */
+      var(--pink-d),
+      var(--blue-d));
   background-clip: text;
   -webkit-background-clip: text;
   /* for Safari */
   color: transparent;
   background-size: 2400% 100%;
-  animation: textcol 15s linear infinite;
+  animation: textcol 10s linear infinite;
 }
