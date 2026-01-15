@@ -20,21 +20,17 @@
   content: "";
   position: absolute;
   border-radius: inherit;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--blue-d),
-    var(--pink-d)
-  );
+  background-image: linear-gradient(to bottom right,
+      var(--blue-d),
+      var(--pink-d));
   z-index: -1;
 }
 
 .faux-button:hover {
   z-index: 0;
-  background-image: linear-gradient(
-    to bottom right,
-    var(--blue-d),
-    var(--pink-d)
-  );
+  background-image: linear-gradient(to bottom right,
+      var(--blue-d),
+      var(--pink-d));
 }
 
 /* Remove psuedoelement line in contact link */
@@ -48,7 +44,7 @@
   width: 2rem;
   height: 1rem;
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 0.2rem;
   box-shadow: 5px 0 10px var(--blue-d), -5px 0 10px var(--pink-d);
 }
