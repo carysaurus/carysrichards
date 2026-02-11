@@ -1,5 +1,22 @@
 /* header.css */
 
+header {
+  align-content: center;
+  margin-top: 0.5rem;
+}
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  align-content: center;
+}
+.header-image {
+  height: clamp(35px, 8vw, 50px);
+  width: auto;
+  margin-left: -2.5rem;
+}
+
 /*Nav Header*/
 .nav-header {
   padding: 0 3em 0 3em;

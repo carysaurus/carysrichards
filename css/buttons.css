@@ -12,7 +12,9 @@
   font-size: 1.5em;
   font-weight: 700;
   z-index: 0;
-  box-shadow: 10px 0 20px var(--blue-d), -10px 0 20px var(--pink-d);
+  box-shadow:
+    10px 0 20px var(--blue-d),
+    -10px 0 20px var(--pink-d);
   text-decoration: none;
 }
 
@@ -20,17 +22,21 @@
   content: "";
   position: absolute;
   border-radius: inherit;
-  background-image: linear-gradient(to bottom right,
-      var(--blue-d),
-      var(--pink-d));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--blue-d),
+    var(--pink-d)
+  );
   z-index: -1;
 }
 
 .faux-button:hover {
   z-index: 0;
-  background-image: linear-gradient(to bottom right,
-      var(--blue-d),
-      var(--pink-d));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--blue-d),
+    var(--pink-d)
+  );
 }
 
 /* Remove psuedoelement line in contact link */
@@ -41,10 +47,12 @@
 
 /* Project buttons */
 .proj-link {
-  width: 2rem;
+  width: clamp(2rem 10vh 4rem);
   height: 1rem;
   font-size: 0.8rem;
   font-weight: 600;
   border-radius: 0.2rem;
-  box-shadow: 5px 0 10px var(--blue-d), -5px 0 10px var(--pink-d);
+  box-shadow:
+    5px 0 10px var(--blue-d),
+    -5px 0 10px var(--pink-d);
 }
