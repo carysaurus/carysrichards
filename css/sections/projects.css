@@ -75,7 +75,7 @@
   animation-range: entry 10% cover 60vh;
 }
 
-.projectImg {
+.projectImgs {
   width: clamp(225px, 35vw, 400px);
   height: auto;
   /* image determines height */
@@ -86,9 +86,11 @@
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
-.project img {
+.projectImg {
+  scroll-snap-align: start;
   width: 100%;
   height: auto;
   /* image determines height */
@@ -117,24 +119,27 @@
   gap: 1rem;
 }
 
-
 .inDevelopmentTag {
   width: 80%;
   height: 1rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   border-radius: 0.2rem;
 
-  background-image: linear-gradient(to bottom right,
-      var(--blue-d),
-      var(--pink-d));
+  background-image: linear-gradient(
+    to bottom right,
+    var(--blue-d),
+    var(--pink-d)
+  );
 
   padding: 0.5em;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 0 5px black, -2px 0 5px black;
+  box-shadow:
+    2px 0 5px black,
+    -2px 0 5px black;
   margin: 0.5rem;
 }
 
