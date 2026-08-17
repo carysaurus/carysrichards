@@ -1,0 +1,54 @@
+/* privacy.css */
+
+/*Privacy Section*/
+.container-privacy {
+  border-bottom: 4px double var(--pink-d);
+  border-top: 4px double var(--pink-d);
+  border-radius: 40px;
+  background-color: black;
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.privacy-copy {
+  align-content: center;
+  /* width: clamp(40%, 44%, 50%); */
+  /* opacity: 0;
+  animation: fadeUp 1s ease-in-out forwards;
+  animation-delay: 0.2s; */
+  margin: 2em 4em;
+}
+
+.section-privacy {
+  position: relative;
+  margin-top: 50px;
+  padding: 0.25em 0;
+}
+
+/*Page Container - page background*/
+#privacy {
+  position: fixed;
+  height: 100vh;
+  width: clamp(5%, 85%, 1200px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: var(--pink-m);
+  border-right: 2px solid var(--pink-d);
+  border-left: 2px solid var(--pink-d);
+}
+#privacy::before {
+  /*Pseudo-element contains the background image*/
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background-image: url("../assets/pageBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: -1;
+}
